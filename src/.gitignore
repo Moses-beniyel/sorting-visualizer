@@ -1,0 +1,15 @@
+# Dependency folders
+node_modules/
+
+# Production build folder
+dist/
+build/
+
+# Local environment variables
+.env
+
+# System files
+.DS_Store
+
+# VS Code settings
+.vscode/

@@ -1,0 +1,57 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  /* Black theme */
+  color: #f1f5f9;
+  /* Light text */
+  /* No scrollbars */
+}
+
+/* App container */
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pushes content below navbar */
+.mainContent {
+  padding-top: 60px;
+  height: calc(100vh - 60px);
+}
+
+.main {
+  height: 100vh;
+  background-color: #f1f5f9;
+
+}
+
+.navContainer {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  font-weight: bold;
+  font-size: large;
+  color: #f1f5f9;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

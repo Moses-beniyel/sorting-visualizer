@@ -1,0 +1,26 @@
+.navContainer {
+  background-color: #ffffff; /* White background */
+  padding: 10px 0;
+  border-bottom: 2px solid #0d3b66; /* Optional subtle border */
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navBar a {
+  color: #0d3b66; /* Deep Blue text */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navBar a:hover {
+  background-color: #e6f0ff; /* Light blue background on hover */
+  color: #0057b8; /* Brighter blue on hover */
+}
