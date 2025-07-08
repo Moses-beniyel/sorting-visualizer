@@ -1,41 +1,64 @@
-/* Fullscreen setup */
-body, html {
+/* --- Global resets (optional) -------------------------------------------- */
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-color: #000; /* pure black */
-  color: #f1f5f9;          /* soft white text */
-  font-family: 'Segoe UI', sans-serif;
-}
-/* Root app container */
-.App {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   box-sizing: border-box;
 }
 
-/* Navbar placeholder styling */
-.navbar {
-  height: 60px;
-  background-color: #111; /* slightly off-black for contrast */
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #0d3b66;           /* Deep blue text */
+  line-height: 1.6;
 }
 
-/* Main content */
-.App > div:nth-child(2) {
-  flex: 1;
+/* --- App wrapper ---------------------------------------------------------- */
+.App {
+  min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 1rem;
+  flex-direction: column;
 }
-.Intro p{
-  color: black;
- 
+
+
+
+/* --- Hero / Heading block ------------------------------------------------- */
+.App h2 {
+  max-width: 900px;
+  margin: 80px auto 40px;   /* center + breathing room */
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 400;
+  white-space: pre-line;    /* preserve the line breaks you put in JSX */
+  background-color: #e6f0ff; /* light blue backdrop */
+  border-left: 6px solid #0d3b66;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* --- Links styled like buttons (if you use <Link>) ----------------------- */
+a {
+  text-decoration: none;
+}
+
+a.btn-link {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 24px;
+  background-color: #0d3b66;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+a.btn-link:hover {
+  background-color: #0057b8;
+}
+
+/* --- Responsive tweaks ---------------------------------------------------- */
+@media (max-width: 768px) {
+  .App h2 {
+    font-size: 18px;
+    margin: 60px 20px;
+  }
 }
