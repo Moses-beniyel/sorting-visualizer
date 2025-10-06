@@ -11,6 +11,10 @@ export const MyProvider = ({ children }) => {
     const [selectArr,setSelectArr]=useState([]);
     const [bubbleArr,setBubbleArr]=useState([]);
     const generateArray = (size = 20) => {
+        if(size>45){
+            alert("array size should be less than 45");
+            return;
+        }
         const newArray = Array.from({ length: size}, () => Math.floor(Math.random() * 20))
         setInsertionArr([...newArray]);
         setMergeArr([...newArray]);

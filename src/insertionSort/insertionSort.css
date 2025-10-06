@@ -146,3 +146,57 @@ input[type="range"] {
   background-color: #f0f4f8;
 }
 
+@media (max-width: 480px) {
+  .title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .bar {
+    width: 8px;
+    font-size: 10px;
+  }
+
+  .array {
+    padding: 8px;
+    gap: 4px;
+    margin: 20px auto;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="number"] {
+    width: 50px;
+    font-size: 13px;
+  }
+
+  input[type="range"] {
+    width: 150px;
+  }
+
+  .Complexity {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .complexity-table {
+    font-size: 12px;
+  }
+
+  .complexity-table th,
+  .complexity-table td {
+    padding: 6px 10px;
+  }
+}
